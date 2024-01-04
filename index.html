@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teilnehmerliste</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Teilnehmerliste</h1>
+        
+        <div>
+            <input type="text" id="nameInput" placeholder="Dein Name">
+            <button onclick="addUser()">Hinzufügen</button>
+        </div>
+    
+        <div>
+            <button onclick="markOnline()">Online</button>
+            <button onclick="markOffline()">Nicht Online</button>
+            <button onclick="saveToFile()">Versenden</button>
+        </div>
+        
+        <div>
+            <h2>Teilnehmerstatus</h2>
+            <ul id="userList"></ul>
+        </div>
+    
+        <div>
+            <h2>Statistik</h2>
+            <p>Online Teilnehmer: <span id="onlineCount">0</span></p>
+            <p>Nicht Online Teilnehmer: <span id="offlineCount">0</span></p>
+        </div>
+    </div>
+    
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
